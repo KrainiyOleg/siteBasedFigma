@@ -5,9 +5,11 @@ body{
 }
 .back{
     background-color: #191D1D;
+    width: fit-content;
 }
 .container{
-    margin-left: 390px;
+    margin-left: auto;
+    margin-right: auto;
     width: 1140px;
 }
 
@@ -17,6 +19,9 @@ body{
     height: 689px;
     margin-bottom: 100px;
     background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
 }
 .header{
     display: flex;
@@ -46,6 +51,49 @@ body{
     width: 229px;
     letter-spacing: 8px;
 }
+.TittleDescription{
+    margin-left: 565px;
+    margin-top: 182px;
+}
+.TittleDescription_One{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59.8px;
+    color: #FFFFFF;
+}
+.TittleDescription_Two{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.82px;
+    color: #FFFFFF;
+}
+.PlayButton{
+    height: 69px;
+    width: 69px;
+    margin-left: 565px;
+    margin-top: 50px;
+    background-image: url(../Image/EllipseOne.png);
+    position: relative;
+}
+.PlayButton>img{
+    position: absolute;
+    margin: auto;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.SwipeDown{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.92px;
+    letter-spacing: 6.88px;
+    color: #FFFFFF;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+}
+
 
 
 .SectionOne{
@@ -285,53 +333,148 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+.sectionFive_LogoOne{
+    display: flex;
+}
+.LogoOneVectors{
+    position: relative;
+    margin-right: 18px;
+}
+.LogoOneVectorTwo{
+    left: -8px;
+    position: absolute;
+    top: -8px;
+}
+.LogoOneVectorThree{
+    left: 7px;
+    position: absolute;
+    top: 7px;
+}
+.LogoOneVectorFour{
+    left: 26px;
+    position: absolute;
+    top: -11px;
+}
+.LogoOneVectorFive{
+    left: -5px;
+    position: absolute;
+    top: 21px;
+}
+
 .LogoOne_text{
+    font-family: 'Martel Sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 43.78px;
     color: #6D7D7D;
 }
 .LogoTwo_text{
+    font-family: 'Mitr', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 50.24px;
     color: #6D7D7D;
+    padding-left: 10px;
 }
 .LogoThree_text{
+    font-family: 'Alex Brush', cursive;
     font-weight: 400;
     font-size: 32px;
     line-height: 40px;
     color: #6D7D7D;
 }
+.sectionFive_LogoFour,.sectionFive_LogoTwo{
+    display: flex;
+}
 .LogoFour_text{
+    font-family: 'Almarai', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 17.86px;
     color: #6D7D7D;
+    margin: auto;
+    padding-left: 10px;
 }
 
 
 .sectionSix{
     height: 524px;
+    margin-top: 100px;
 }
 .sectionSix>.container{
     display: grid;
     grid-template-columns: 60% 40%;
+    grid-template-rows: 33% 33% 34%;
+    grid-row-gap: 30px;
     grid-template-areas:
-    'Services1 TextTwo'
-    'Services2 TextTwo'        
-    'Services3 TextThree';        
+        'ServicesOneLeft ServicesOneRight'
+        'ServicesTwoLeft ServicesTwoRight'        
+        'ServicesThreeLeft ServicesThreeRight';        
 }
-
-
+.ServicesOne_Left,.ServicesTwo_Left,.ServicesThree_Left{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59.8px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+.RightText{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.82px;
+    color: #6D7D7D;
+    margin-bottom: 15px;
+}
+.RightText~a{
+    text-decoration: none;
+    letter-spacing: 6.88px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.92px;
+    color: #FFFFFF;
+}
+.ServicesOne_Left{
+    grid-area: ServicesOneLeft;
+    border-bottom: 1px solid #212828;
+}
+.ServicesOne_Right{
+    grid-area: ServicesOneRight;
+    border-bottom: 1px solid #212828;
+}
+.ServicesTwo_Left{
+    grid-area: ServicesTwoLeft;
+    border-bottom: 1px solid #212828;
+}
+.ServicesTwo_Right{
+    grid-area: ServicesTwoRight;
+    border-bottom: 1px solid #212828;
+}
+.ServicesThree_Left{
+    grid-area: ServicesThreeLeft;
+}
+.ServicesThree_Right{
+    grid-area: ServicesThreeRight;
+}
 
 
 .img-line{
     display: flex;
+    height: auto;
+    width: 100%;
 }
 .img_box{
-    height: 515px;
-    width: 480px;
+    height: auto;
+    width: 25%;
+}
+.img_box>img{
+    width: 100%;
+}
+
+
+.sectionEight{
+    height: 625px;
+    margin-top: 110px;
 }
 .titleBlog{
     color: #6D7D7D;
@@ -345,8 +488,9 @@ body{
     font-weight: 400;
     font-size: 40px;
 }
-.boton_blog{
+.botom_blog{
     display: flex;
+    height: 445px;
 }
 .P_SectionEight{
     font-family: 'Nunito', sans-serif;
@@ -357,7 +501,7 @@ body{
 p~a{
     color: #FFFFFF;
     text-decoration: none;
-    letter-spacing: 8px;
+    letter-spacing: 6.88px;
 }
 .blog1,.blog2,.blog3{
     padding-right: 25px;
@@ -367,8 +511,140 @@ p~a{
 }
 .top_blog{
     text-align: center;
-    width: 1140px;
+    margin-bottom: 25px;
 }
 .blog{
+    border-bottom: 1px solid #212828;
+}
+
+
+.sectionNine{
+    margin-bottom: 85px;
+}
+.sectionNine>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionNine_Title{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 59.8px;
+    color: #FFFFFF;
+}
+.Frame_Text{
+    width: 512px;
+    border-bottom: 1px solid #6D7D7D;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.82px;
+    color: #FFFFFF;
+    position: relative;
+    left: 80px;
+    height: fit-content;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+.sectionNine_button{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url(../Image/BG_button.png);
+    height: 39px;
+    width: 229px;
+    letter-spacing: 8px;
+    align-self: center;
+}
+
+
+.footer{
+    background-color: #131616;
+    height: 518px;
+}
+.footer_Menu{
+    display: flex;
+    height: 170px;
+    padding-top: 50px;
+    border-bottom: solid 1px #212828;
+}
+.footer_Menu>p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.82px;
+    color: #FFFFFF;
+    margin-right: 54px;
+    align-self: center;
+}
+.Logo{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.92px;
+    color: #FFFFFF;
+    letter-spacing: 6.88px;
+    align-self: center;
+    margin-left: auto;   
+}
+
+
+.SocialMedia{
+    display: flex;
     padding-top: 110px;
+}
+.SocialMedia_Ellipse{
+    display: flex;
+    padding-right: 135px;
+    border-right: 1px solid #212828;
+
+}
+.SocialMedia_Ellipse>div{
+    background-image: url(../Image/Ellipse\ 6.png);
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    position: relative;
+}
+.SocialMedia_TextRight{
+    margin-left: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.82px;
+    color: #FFFFFF;
+    text-align: right;
+}
+.Ellipse_Vector{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.CopyRight{
+    height: 123px;
+}
+.CopyRight>.container{
+    display: flex;
+    padding-top: 50px;
+}
+.CopyRight_TextOne{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.82px;
+    color: #FFFFFF;
+    margin-right: 350px;
+}
+.CopyRight_TextTwo,.CopyRight_TextThree{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.92px;
+    color: #6D7D7D;
+    letter-spacing: 6.88px;
+    margin-left: auto;
 }
