@@ -193,7 +193,7 @@ body{
     background-color: #212828;
     height: 318px;
     border-radius: 50px 50px 0px 50px;
-    background-image: url(../Image/Ellipse\ 2.png);
+    background-image: url(../Image/Ellipse2.png);
     background-repeat: no-repeat;
 }
 .sectionThree_Text{
@@ -600,7 +600,7 @@ p~a{
 
 }
 .SocialMedia_Ellipse>div{
-    background-image: url(../Image/Ellipse\ 6.png);
+    background-image: url(../Image/Ellipse6.png);
     width: 36px;
     height: 36px;
     margin-right: 20px;
